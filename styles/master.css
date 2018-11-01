@@ -1,0 +1,705 @@
+/* 1250px return menu */
+/*
+variables
+*/
+:root {
+    --main-purple: #8b0f72;
+    --main-blue: #3f73a8;
+    --bg-grey: #f4f6f8;
+    --bg-grey-darker: #dddfe1;
+    --bg-grey-darkest: #cccdcf;
+    --bg-dark-grey: #58585b;
+    --font-light-grey: #cdcdcd;
+}
+
+
+/*
+baseline
+*/
+
+* {
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+.wrapper-text {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .wrapper-text {
+        max-width: 88%;
+    }
+}
+
+/* For Laptops */
+@media only screen and (min-width: 1200px) {
+    .wrapper-text {
+        max-width: 980px;
+    }
+}
+
+.wrapper {
+    max-width: 1276px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.7rem 0rem;
+    transition: all .13s ease-out;
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .btn {
+        font-size: 2.25rem;
+        padding: 0.7rem 1rem;
+    }
+}
+
+.section {
+    margin-top: 2rem;
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .section {
+        margin-top: 5rem;
+    }
+}
+
+/*
+--------------------------------------------------------------------------Header
+*/
+.header {
+    background-color: #fcfcfc;
+    width: 100%;
+}
+
+.logo-img {
+    width: 230px;
+    margin: 18px 0 16px 1rem;
+}
+
+/* For Small Screens */
+@media only screen and (min-width: 500px) {
+    .logo-img {
+        height: 70px;
+        width: auto;
+        margin-top: 16px;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .logo-img {
+        height: 80px;
+        margin-top: 9px;
+    }
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-list {
+    visibility: hidden;
+    display: none;
+    list-style: none;
+    float: right;
+}
+
+/* For Laptops */
+@media only screen and (min-width: 1245px) {
+    .nav-list {
+        visibility: visible;
+        display: block;
+    }
+}
+
+.nav-list li {
+    float: right;
+    font-size: 1.75rem;
+}
+
+.nav-list a {
+    display: block;
+    text-decoration: none;
+    margin: 16px 0 0 10px;
+    padding: 1rem;
+    color: var(--main-purple);
+    border-bottom: 1px solid #fcfcfc;
+    transition: all .2s ease-out;
+}
+
+.nav-list a:hover {
+    color: var(--main-blue);
+    border-bottom: 2px solid var(--main-blue);
+}
+
+/*
+---------------------------------------------------------------------Mobile Menu
+*/
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: var(--main-purple);
+    color: white;
+    padding: 16px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all .13s ease-out;
+}
+
+/* For Tablets */
+@media only screen and (min-width: 800px) {
+    .dropbtn {
+        width: 110%;
+        font-size: 1.5rem;
+        transform: translateX(-20px);
+    }
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: var(--main-blue);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+    display: inline-block;
+}
+
+/* For Laptops */
+@media only screen and (min-width: 1245px) {
+    .dropdown {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+/* For Small Screens */
+@media only screen and (min-width: 500px) {
+    .dropdown {
+        top: 1.7rem;
+        right: 1.5rem;
+    }
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--bg-grey);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* For Tablet */
+@media only screen and (min-width: 800px) {
+    .dropdown-content {
+        min-width: 200px;
+    }
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: var(--main-purple);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* For Tablet */
+@media only screen and (min-width: 800px) {
+    .dropdown-content a {
+        font-size: 1.3rem;
+    }
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: var(--main-blue);
+    color: #FFF;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*
+------------------------------------------------------------------------About Us
+*/
+
+/* For mobile */
+.headline {
+    padding: .5rem;
+    background-color: var(--bg-grey);
+    border-bottom: 2px solid var(--bg-grey-darker);
+    box-shadow: 0px 5px 15px 1px var(--bg-grey-darkest) inset;
+    /* x-offset , y-offset , blur , spread , color , inset */
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .headline {
+        padding: 1.2rem;
+    }
+}
+
+/* For mobile */
+.about-us-heading {
+    text-align: center;
+    color: grey;
+    font-weight: normal;
+    font-size: 2.2rem;
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .about-us-heading {
+        font-size: 4rem;
+    }
+}
+
+/* For mobile */
+.about-us-text {
+    line-height: 1.9rem;
+    text-align: center;
+    color: grey;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .about-us-text {
+        font-weight: normal;
+    }
+}
+
+/* For mobile */
+.btn-services {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 180px;
+    color: #FFFFFF;
+    background-color: var(--main-purple);
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .btn-services {
+        margin-top: 4rem;
+        width: 198px;
+    }
+}
+
+.btn-services:hover {
+    background-color: var(--main-blue);
+}
+
+
+/*
+--------------------------------------------------------------------Icon Section
+*/
+.icon-section {
+    background-color: var(--bg-grey);
+    margin-top: 4rem;
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .icon-section {
+        margin-top: 0;
+    }
+}
+
+.icon-section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.icon-card {
+    padding: 3rem 0;
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .icon-card {
+        float: left;
+        width: 33.3%;
+        padding: 6rem 0;
+    }
+}
+
+.icon-card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 110px;
+}
+
+.icon-card p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: lighter;
+    max-width: 300px;
+    font-size: 1.5rem;
+    color: #58585b;
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .icon-card p {
+        margin-top: 2rem;
+        font-size: 1.31rem;
+        max-width: 250px;
+    }
+}
+
+.icon-card p span {
+    color: var(--main-blue);
+    font-weight: bold;
+}
+
+/*
+----------------------------------------------------------------------CONTACT US
+*/
+.contact-us {
+    background-color: var(--bg-dark-grey);
+}
+
+.contact-us-heading {
+    padding: 2rem 0 0 0;
+    text-align: center;
+    color: #FFF;
+    font-size: 2.5rem;
+}
+
+/* For Small Screens */
+@media only screen and (min-width: 500px) {
+    .contact-us-heading {
+        padding: 2rem 0;
+    }
+}
+
+.column {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* For Small Screens */
+@media only screen and (min-width: 500px) {
+    .column {
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .column {
+    }
+}
+
+/* For Laptops */
+@media only screen and (min-width: 1200px) {
+    .column {
+        float: left;
+        width: 50%;
+    }
+}
+
+.contact-row {
+}
+
+/* For Small Screens */
+@media only screen and (min-width: 500px) {
+    .contact-row {
+        max-width: 450px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* For Tablets */
+@media only screen and (min-width: 800px) {
+    .contact-row {
+        max-width: 550px;
+    }
+}
+
+/* For Laptops */
+@media only screen and (min-width: 1200px) {
+    .contact-row {
+        max-width: 100%;
+        height: 70px;
+    }
+}
+
+.contact-row-2 {
+}
+
+/* For Small Screens */
+@media only screen and (min-width: 500px) {
+    .contact-row-2 {
+        max-width: 450px;
+        height: 140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .contact-row-2 {
+        max-width: 550px;
+    }
+}
+
+/* For Laptops */
+@media only screen and (min-width: 1200px) {
+    .contact-row-2 {
+        max-width: 100%;
+        height: 140px;
+    }
+}
+
+.contact-icon {
+    display: block;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 30px;
+}
+
+/* For Small Screens */
+@media only screen and (min-width: 500px) {
+    .contact-icon {
+        float: left;
+        margin-top: 0px;
+        margin-right: 30px;
+        margin-left: 70px;
+        height: 35px;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .contact-icon {
+        margin-left: 100px;
+    }
+}
+
+/* For Laptops */
+@media only screen and (min-width: 1200px) {
+    .contact-icon {
+        margin-left: 140px;
+    }
+}
+
+.contact-text {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: var(--font-light-grey);
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* For Small Screens */
+@media only screen and (min-width: 500px) {
+    .contact-text {
+        text-align: left;
+        margin-top: 0px;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .contact-text {
+        font-size: 1.7rem;
+    }
+}
+
+/* For Laptops */
+@media only screen and (min-width: 1200px) {
+    .contact-text {
+        text-align: left;
+        margin-top: 0px;
+    }
+}
+
+.trading-hours-row {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* For Small Screens */
+@media only screen and (min-width: 500px) {
+    .trading-hours {
+        float: left;
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .trading-hours {
+    }
+}
+
+/* For Laptops */
+@media only screen and (min-width: 1200px) {
+    .trading-hours {
+        margin-bottom: 0;
+        width: 47%;
+    }
+}
+
+.day {
+    float: left;
+}
+
+.time {
+    float: right;
+}
+
+.trading-hours-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.trading-hours::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.hours {
+    height: auto;
+}
+
+.hours::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.address-text-block {
+    margin-bottom: 2rem;
+}
+
+/* For Small Screens */
+@media only screen and (min-width: 500px) {
+    .address-text-block {
+        float: left;
+        width: 50%;
+        margin-bottom: 0;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .address-text-block {
+    }
+}
+
+/* For Laptops */
+@media only screen and (min-width: 1200px) {
+    .address-text-block {
+        float: left;
+        width: 50%;
+        margin-bottom: 0;
+    }
+}
+
+.maps-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* For Tablets */
+@media only screen and (min-width: 800px) {
+    .maps-section {
+    }
+}
+
+/* For Laptops */
+@media only screen and (min-width: 1200px) {
+    .maps-section {
+        margin-left: 140px;
+        text-align: left;
+    }
+}
+
+.contact-us-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*
+------------------------------------------------------------------------- FOOTER
+*/
+
+footer {
+    padding: 30px;
+    text-align: center;
+    color: #FFF;
+    background-color: var(--bg-dark-grey);
+}
+
+
+/*
+----------------------------------------------------------------------- SERVICES
+*/
+
+.services-heading2 {
+    margin-bottom: .5rem;
+    color: grey;
+    font-size: 1.5rem
+}
+
+@media only screen and (min-width: 800px) {
+    .services-heading2 {
+        font-size: 1.7rem
+    }
+}
+
+.services-text {
+    margin-bottom: 2.5rem;
+    color: grey;
+    font-weight: lighter;
+    line-height: 2rem;
+    font-size: 1.5rem
+}
+
+@media only screen and (min-width: 800px) {
+    .services-text {
+        font-weight: normal;
+        line-height: normal;
+    }
+}

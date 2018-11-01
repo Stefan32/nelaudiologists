@@ -1,0 +1,298 @@
+/*
+variables
+*/
+:root {
+    --main-purple: #8b0f72;
+    --main-blue: #3f73a8;
+    --bg-grey: #f4f6f8;
+    --bg-grey-darker: #dddfe1;
+    --bg-grey-darkest: #cccdcf;
+    --bg-dark-grey: #58585b;
+    --font-light-grey: #cdcdcd;
+}
+
+
+/*
+baseline
+*/
+
+* {
+    font-family: Calibri, sans-serif;
+    margin: 0;
+}
+
+.wrapper-text {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    max-width: 1276px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    font-size: 2.25rem;
+    font-weight: bold;
+    padding: 0.7rem 1rem;
+    transition: all .13s ease-out;
+}
+
+.section {
+    margin-top: 5rem;
+}
+
+/*
+--------------------------------------------------------------------------Header
+*/
+.header {
+    background-color: #fcfcfc;
+    width: 100%;
+    height: 100px;
+}
+
+.logo-img {
+    height: 80px;
+    margin-top: 9px;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-list {
+    list-style: none;
+    float: right;
+}
+
+.nav-list li {
+    float: right;
+    font-size: 1.75rem;
+}
+
+.nav-list a {
+    display: block;
+    text-decoration: none;
+    margin: 16px 0 0 10px;
+    padding: 1rem;
+    color: var(--main-purple);
+    border-bottom: 1px solid #fcfcfc;
+    transition: all .2s ease-out;
+}
+
+.nav-list a:hover {
+    color: var(--main-blue);
+    border-bottom: 2px solid var(--main-blue);
+}
+
+/*
+------------------------------------------------------------------------About Us
+*/
+
+/* For mobile */
+.headline {
+    background-color: var(--bg-grey);
+    padding: 1.2rem;
+    border-bottom: 2px solid var(--bg-grey-darker);
+    box-shadow: 0px 5px 15px 1px var(--bg-grey-darkest) inset;
+    /* x-offset , y-offset , blur , spread , color , inset */
+}
+
+/* For tablets */
+@media only screen and (min-width: 600px) {
+    .headline {
+        background-color: green;
+    }
+}
+
+/* For desktop */
+@media only screen and (min-width: 800px) {
+    .headline {
+        background-color: red;
+    }
+}
+
+.about-us-heading {
+    text-align: center;
+    color: grey;
+    font-weight: normal;
+    font-size: 4rem;
+}
+
+.about-us-text {
+    text-align: center;
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.btn-services {
+    margin-top: 4rem;
+    text-align: center;
+    width: 198px;
+    color: #FFFFFF;
+    background-color: var(--main-purple);
+}
+
+.btn-services:hover {
+    background-color: var(--main-blue);
+}
+
+
+/*
+--------------------------------------------------------------------Icon Section
+*/
+.icon-section {
+    background-color: var(--bg-grey);
+}
+
+.icon-section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.icon-card {
+    padding: 6rem 0;
+    float: left;
+    width: 33.3%;
+}
+
+.icon-card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 110px;
+}
+
+.icon-card p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: lighter;
+    max-width: 250px;
+    font-size: 1.31rem;
+    color: #58585b;
+}
+
+.icon-card p span {
+    color: var(--main-blue);
+    font-weight: bold;
+}
+
+/*
+----------------------------------------------------------------------CONTACT US
+*/
+.contact-us {
+    background-color: var(--bg-dark-grey);
+}
+
+.contact-us-heading {
+    padding: 2rem 0;
+    text-align: center;
+    color: #FFF;
+    font-size: 2.5rem;
+}
+
+.column {
+    margin-top: 1rem;
+    float: left;
+    width: 50%;
+}
+
+.contact-row {
+    height: 70px;
+}
+
+.contact-row-2 {
+    height: 140px;
+}
+
+.contact-icon {
+    display: block;
+    float: left;
+    margin-right: 30px;
+    margin-left: 140px;
+    height: 35px;
+}
+
+.contact-text {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: lighter;
+    color: var(--font-light-grey);
+}
+
+.trading-hours {
+    float: left;
+    width: 47%;
+}
+
+.trading-hours::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.day {
+    float: left;
+}
+
+.time {
+    float: right;
+}
+
+.trading-hours-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.address-text-block {
+    float: left;
+    width: 50%;
+}
+
+.maps-section {
+    margin-left: 140px;
+}
+
+.contact-us-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*
+------------------------------------------------------------------------- FOOTER
+*/
+
+footer {
+    padding: 30px;
+    text-align: center;
+    color: #FFF;
+    background-color: var(--bg-dark-grey);
+}
+
+
+/*
+----------------------------------------------------------------------- SERVICES
+*/
+
+.services-heading2 {
+    margin-bottom: .5rem;
+    color: grey;
+    font-size: 1.7rem
+}
+
+.services-text {
+    margin-bottom: 2.5rem;
+    color: grey;
+    font-size: 1.5rem
+}

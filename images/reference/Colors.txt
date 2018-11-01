@@ -1,0 +1,14 @@
+#6e205e
+
+pers 1
+#96247f
+
+
+
+COLORS
+
+pers 2
+#8b0f72
+
+blou 1
+#3f73a8
