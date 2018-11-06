@@ -350,6 +350,10 @@ baseline
     }
 }
 
+.icon-card a {
+    text-decoration: none;
+}
+
 .icon-card img {
     display: block;
     margin-left: auto;
