@@ -434,7 +434,7 @@ baseline
 /* For Small Screens */
 @media only screen and (min-width: 500px) {
     .contact-row {
-        max-width: 450px;
+        max-width: 500px;
         height: 70px;
         margin-left: auto;
         margin-right: auto;
