@@ -10,6 +10,7 @@ variables
     --bg-grey-darkest: #cccdcf;
     --bg-dark-grey: #58585b;
     --font-light-grey: #cdcdcd;
+    --font-dark-grey: #606060;
 }
 
 
@@ -264,7 +265,7 @@ baseline
 /* For mobile */
 .about-us-heading {
     text-align: center;
-    color: grey;
+    color: var(--font-dark-grey);
     font-weight: normal;
     font-size: 2.2rem;
 }
@@ -280,9 +281,9 @@ baseline
 .about-us-text {
     line-height: 1.9rem;
     text-align: center;
-    color: grey;
+    color: var(--font-dark-grey);
     font-size: 1.5rem;
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 /* For tablets */
@@ -361,7 +362,7 @@ baseline
     margin-right: auto;
     margin-top: 1rem;
     text-align: center;
-    font-weight: lighter;
+    font-weight: normal;
     max-width: 300px;
     font-size: 1.5rem;
     color: #58585b;
@@ -519,7 +520,7 @@ baseline
 .contact-text {
     display: block;
     font-size: 1.5rem;
-    font-weight: lighter;
+    font-weight: normal;
     color: var(--font-light-grey);
     text-align: center;
     margin-top: 10px;
@@ -679,7 +680,7 @@ footer {
 
 .services-heading2 {
     margin-bottom: .5rem;
-    color: grey;
+    color: var(--font-dark-grey);
     font-size: 1.5rem
 }
 
@@ -691,8 +692,8 @@ footer {
 
 .services-text {
     margin-bottom: 2.5rem;
-    color: grey;
-    font-weight: lighter;
+    color: var(--font-dark-grey);
+    font-weight: normal;
     line-height: 2rem;
     font-size: 1.5rem
 }
