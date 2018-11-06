@@ -363,7 +363,7 @@ baseline
     margin-top: 1rem;
     text-align: center;
     font-weight: normal;
-    max-width: 300px;
+    max-width: 310px;
     font-size: 1.5rem;
     color: #58585b;
 }
@@ -373,7 +373,7 @@ baseline
     .icon-card p {
         margin-top: 2rem;
         font-size: 1.31rem;
-        max-width: 250px;
+        max-width: 260px;
     }
 }
 
