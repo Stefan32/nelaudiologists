@@ -78,6 +78,32 @@ baseline
 }
 
 /*
+----------------------------------------------------------------------Pre Header
+*/
+.pre-header {
+    background-color: #fcfcfc;
+}
+
+.pre-header-text {
+    font-size: 14px;
+    padding: 20px;
+    color: var(--font-dark-grey);
+    border-bottom: 1px solid var(--font-light-grey);
+}
+
+.pre-header-text--blue {
+    font-size: 16px;
+    color: var(--main-blue);
+}
+
+.pre-header-text--purple {
+    font-size: 16px;
+    color: var(--main-purple);
+}
+
+
+
+/*
 --------------------------------------------------------------------------Header
 */
 .header {
