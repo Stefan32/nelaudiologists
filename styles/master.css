@@ -67,13 +67,11 @@ baseline
 }
 
 .section {
-    margin-top: 2rem;
 }
 
 /* For tablets */
 @media only screen and (min-width: 800px) {
     .section {
-        margin-top: 5rem;
     }
 }
 
@@ -367,6 +365,13 @@ baseline
   to {opacity: 1}
 }
 
+/*
+-------------------------------------------------------------------------------- STATIC HEADER IMG
+*/
+.static-header-img {
+    display: block;
+    width: 100%;
+}
 
 /*
 ------------------------------------------------------------------------About Us
@@ -844,7 +849,6 @@ footer {
 
 @media only screen and (min-width: 800px) {
     .services-heading2 {
-        margin-top: 5rem;
         font-size: 1.7rem
     }
 }
