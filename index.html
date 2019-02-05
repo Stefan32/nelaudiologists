@@ -20,7 +20,9 @@
     </head>
     <body>
         <div class="pre-header">
-            <p class="pre-header-text wrapper">Call Us Today: <span class="pre-header-text--blue"> 082 651 9839 </span> or Email: <span class="pre-header-text--purple"> info@nelaudiologists.co.za</span></p>
+            <div class="pre-header-small-wrapper">
+                <p class="pre-header-text wrapper">Call Us Today: <span class="pre-header-text--blue"> 082 651 9839 </span> or Email: <span class="pre-header-text--purple"> info@nelaudiologists.co.za</span></p>
+            </div>
         </div>
         <div class="header">
             <div class="nav-container wrapper">
@@ -54,29 +56,47 @@
               <!-- Full-width images with number -->
               <div class="mySlides fade">
                     <div class="numbertext">1 / 4</div>
-                    <img src="images/photos/banner-building-01.png">
+                    <picture>
+                        <source srcset="images/photos/banner-building-01.png 990w" media="(min-width: 800px)">
+                        <source srcset="images/photos/banner-building-01a.png 800w" media="(min-width: 500px)">
+                        <img srcset="images/photos/banner-building-01b.png 500w" alt="blue fade background">
+                    </picture>
               </div>
 
               <div class="mySlides fade">
                     <div class="numbertext">2 / 4</div>
-                    <img src="images/photos/office.png">
+                    <picture>
+                        <source srcset="images/photos/office.png 990w" media="(min-width: 800px)">
+                        <source srcset="images/photos/officea.png 800w" media="(min-width: 500px)">
+                        <img srcset="images/photos/officeb.png 500w" alt="blue fade background">
+                    </picture>
               </div>
 
               <div class="mySlides fade">
                     <div class="numbertext">3 / 4</div>
-                    <img src="images/photos/3-in-1.png">
+                    <picture>
+                        <source srcset="images/photos/3-in-1.png 990w" media="(min-width: 800px)">
+                        <source srcset="images/photos/3-in-1a.png 800w" media="(min-width: 500px)">
+                        <img srcset="images/photos/3-in-1b.png 500w" alt="blue fade background">
+                    </picture>
 
               </div>
 
               <div class="mySlides fade">
                     <div class="numbertext">4 / 4</div>
-                    <img src="images/photos/booth.png">
+                    <picture>
+                        <source srcset="images/photos/booth.png 990w" media="(min-width: 800px)">
+                        <source srcset="images/photos/bootha.png 800w" media="(min-width: 500px)">
+                        <img srcset="images/photos/boothb.png 500w" alt="blue fade background">
+                    </picture>
               </div>
 
 
               <!-- Next and previous buttons -->
+<!--
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+-->
 
               <!-- The dots/circles -->
               <div class="circle-container" style="text-align:center">
@@ -96,10 +116,10 @@
 
         <div class="blue-crush-container">
             <picture>
-                <source srcset="images/photos/blue-crush.png 1920w" media="(min-width: 1380px)">
-                <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
-                <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
-                <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Coastal view of ocean and mountains." class="blue-crush-image">
+                <source srcset="images/photos/blue-crush.png 1920w" media="(min-width: 990px)">
+                <source srcset="images/photos/blue-crush-990x500.png 990w" media="(min-width: 800px)">
+                <source srcset="images/photos/blue-crush-800x630.png 800w" media="(min-width: 500px)">
+                <img srcset="images/photos/blue-crush-500x760.png 500w" alt="blue fade background" class="blue-crush-image">
             </picture>
             <div class="about-us wrapper">
                 <p class="about-us-text wrapper-text">At Jacomien Nel Audiologists our focus is on you. Unlike a large medical clinic, we value patient care more than paperwork. We take the time to hear your story and learn about your challenges. We create treatment plans to match up with your unique situation and communication goals. You will be put at ease with the personal attention you receive and know that you made the right choice in letting us address your hearing difficulties.</p>
@@ -181,6 +201,6 @@
         <footer>&copy; 2018 All Rights Reserved</footer>
 
         <script type="text/javascript" src="scripts/javascript.js"></script>
-        <script type="text/javascript" src="scripts/javascript-manual.js"></script>
+        <script type="text/javascript" src="scripts/javascript-auto.js"></script>
     </body>
 </html>

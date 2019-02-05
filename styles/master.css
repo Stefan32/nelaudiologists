@@ -80,13 +80,25 @@ baseline
 */
 .pre-header {
     background-color: #fcfcfc;
+    border-bottom: 1px solid var(--font-light-grey);
+}
+
+.pre-header-small-wrapper {
+    width: 300px;
+}
+
+/* For small screens */
+@media only screen and (min-width: 800px) {
+    .pre-header-small-wrapper {
+        width: 100%;
+    }
 }
 
 .pre-header-text {
     font-size: 14px;
     padding: 15px 20px;
     color: var(--font-dark-grey);
-    border-bottom: 1px solid var(--font-light-grey);
+
 }
 
 .pre-header-text--blue {
@@ -204,8 +216,24 @@ baseline
 .dropdown {
     position: absolute;
     right: 1.2rem;
-    top: 1.2rem;
+    top: 5.3rem;
     display: inline-block;
+}
+
+/* For Small Screens */
+@media only screen and (min-width: 500px) {
+    .dropdown {
+        top: 5.9rem;
+        right: 1.5rem;
+    }
+}
+
+/* For Tablets */
+@media only screen and (min-width: 800px) {
+    .dropdown {
+        top: 4.8rem;
+        right: 1.5rem;
+    }
 }
 
 /* For Laptops */
@@ -213,14 +241,6 @@ baseline
     .dropdown {
         visibility: hidden;
         display: none;
-    }
-}
-
-/* For Small Screens */
-@media only screen and (min-width: 500px) {
-    .dropdown {
-        top: 1.7rem;
-        right: 1.5rem;
     }
 }
 
@@ -419,7 +439,21 @@ baseline
 .blue-crush-image {
     position: absolute;
     z-index: -1;
-    width: 100%;
+    height: 760px;
+}
+
+/* For small screens */
+@media only screen and (min-width: 500px) {
+    .blue-crush-image {
+        height: 630px;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 800px) {
+    .blue-crush-image {
+        height: 500px;
+    }
 }
 
 /* For mobile */
