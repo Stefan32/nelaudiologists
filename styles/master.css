@@ -439,7 +439,8 @@ baseline
 .blue-crush-image {
     position: absolute;
     z-index: -1;
-    height: 760px;
+    height: 900px;
+    max-width: 100%;
 }
 
 /* For small screens */
