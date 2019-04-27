@@ -165,7 +165,21 @@ baseline
 
 .nav-list li {
     float: right;
-    font-size: 1.75rem;
+    font-size: 1rem;
+}
+
+/* For tablets */
+@media only screen and (min-width: 1245px) {
+    .nav-list li {
+        font-size: 1.5rem;
+    }
+}
+
+/* For Laptops */
+@media only screen and (min-width: 1300px) {
+    .nav-list li {
+        font-size: 1.6rem;
+    }
 }
 
 .nav-list a {
